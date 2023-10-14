@@ -1,0 +1,13 @@
+table {
+  border-collapse: collapse !important;
+  padding: 30px;
+}
+table, td,tr {
+  border: 1px solid white !important;
+  color: white !important;
+  padding: 6px;
+  
+}
+body{
+  background-image: linear-gradient(rgba(20,20,20,0.5),rgba(20,20,20,0.5)), url(images/p11.jpg);
+}
