@@ -3,7 +3,7 @@ table {
   padding: 30px;
 }
 table, td,tr {
-  border: 1px solid white !important;
+  border: 2px solid white !important;
   color: white !important;
   padding: 6px;
   

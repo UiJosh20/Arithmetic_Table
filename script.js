@@ -6,7 +6,10 @@ function calc() {
   var operation = dropdown.value;
   var resultTable = document.createElement('table');
   var tbody = document.createElement('tbody');
-  var wrong = "./sound/wrong.wav";
+  
+  var pass = "./sounds/bonus.wav";
+  var songOn = new Audio(pass);
+        songOn.play();
   
   
   if (one == "" && two == ""){
@@ -19,25 +22,18 @@ function calc() {
       var row = document.createElement('tr');
       for(j=1; j<=two; j++)
       {
-      var pass = "./sounds/bonus.wav";
       var cell = document.createElement('td');
       var result;
       if (operation == '+'){
-        var songOn = new Audio(pass);
-        songOn.play();
         result = i + j;
         
       }else if (operation == '-'){
-        var songOn = new Audio(pass);
-        songOn.play();
+        
         result = i - j;
       } else if (operation == '/'){
-        var songOn = new Audio(pass);
-        songOn.play();
+        
         result = i / j;
       }else if (operation == '*'){
-        var songOn = new Audio(pass);
-        songOn.play();
         result = i * j;
       }
       cell.textContent = `${j} ${operation} ${i} = ${result}`;
